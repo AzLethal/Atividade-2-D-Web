@@ -26,21 +26,6 @@ function apresentaForm(add, rem) {
     rem.classList.remove('active')
 }
 
-//valida o tipo de conversão escolhida - 'bin' ou 'octal'
-function validaTipo(conversor) {
-    //caso escolhido algo que não seja 'bin' ou 'octal', será apresentado a mensagem abaixo, pedindo para digitar 'bin' ou 'octal'
-    while(conversor !== 'bin' && conversor !== 'octal') {
-        conversor = prompt("Digite 'bin' para conversão binária ou 'octal' para conversão octal?")
-    }
-    if(conversor === 'bin') {
-        conversor = 2;
-    } else if (conversor === 'octal') {
-        conversor = 8;
-    }
-    console.log(conversor);
-    return conversor;
-}
-
 function mostraResult(resultado) {
     inputRes.value = converteDecimal(resultado);
     return inputRes;
