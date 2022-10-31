@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="binario, octal, binary, oct, bin, conversor">
+    <meta name="author" content="Marcelo Oliveira">
+    <meta http-equiv="refresh" content="600">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Conversor | BINOCT</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="primario">
+            <h1 class="titulo">Sejam Bem Vindos ao Conversor BINOCT </h1>
+            <h2 class="subtitulo">Conversor de Números Decimais para Binários ou <span class="oitoBits">Octais</span></h2>
+        </div>
+    </header>
+    <main class="principal">
+        <section>
+            <div class="menuPrimario">
+                <nav class="menu">
+                    <button class="botao bin">
+                        Binário | BIN
+                    </button>
+                    <button class="botao octal">
+                        Octal | OCT
+                    </button>
+                </nav>
+            </div>
+        </section>
+        <section class="conversores">
+            <form class="form">
+                <div class="binForm active">
+                    <label class="labelConversor" for="binary">Conversão para Binário!</label>
+                    <input class="inputConversor" type="number" id="binary" placeholder="Decimal para Binário!">
+                </div>
+                <div class="octalForm">
+                    <label class="labelConversor" for="oct">Conversão para Octal!</label>
+                    <input class="inputConversor" type="number" id="oct" placeholder="Decimal para Octal!">
+                </div>
+                <div class="formButton">
+                    <button class="botao converte">Converter!!</button>
+                </div>
+                <div class="resultForm">
+                    <label class="labelConversor" for="result">Resultado!</label>
+                    <input class="inputConversor" type="number" id="result" placeholder="Resultado" readonly>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodapeTexto">
+            &copy; Developed by Marcelo Olivera  
+        </div>
+    </footer>
+</body>
+<script src="./conversorDecimal.js"></script>
+</html>

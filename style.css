@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --octal-bin-family: 'Silkscreen', cursive;
+    --fontPag-padrao: 'Orbitron', sans-serif;
+    --botao: hsla(0, 0%, 90%, 0.8);
+    --corFundo: -webkit-linear-gradient(right, hsla(10, 50%, 30%, 1) , hsla(15, 70%, 45%, 1), hsla(60, 70%, 45%, 1));
+    font-family: var(--fontPag-padrao);
+}
+
+body {
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    background-image: var(--corFundo);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    background-image: var(--corFundo);
+}
+
+.titulo{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.primario {
+    width: 100%;
+}
+
+.oitoBits {
+    font-family: var(--octal-bin-family);
+    font-size: 2rem;
+}
+
+.menu{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+}
+
+.botao {
+    font-family: var(--octal-bin-family);
+    font-size: 1.55rem;
+    border: none;
+    border-top: 5px solid limegreen;
+    background-color: var(--botao);
+    border-radius: 10px;
+}
+
+.bin {
+    width: 19.6%;
+    margin-right: 10px;
+}
+
+.octal {
+    width: 19.6%;
+}
+
+.botao:hover {
+    background-color: limegreen;
+    border-top: 6px solid greenyellow;
+    color: hsla(0, 100%,40%, 1);
+    font-size: 1.7rem;
+}
+
+.conversores {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    background-color: var(--botao);
+    flex-direction: column;
+    padding: 1rem 2rem 2rem 2rem;
+    width: 40%;
+    border-radius: 15px;
+    border-top: 10px solid limegreen;;
+}
+
+.binForm, .octalForm, .resultForm {
+    flex-direction: column;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.binForm {
+    display: none;
+}
+
+.octalForm {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.inactive {
+    display: none;
+}
+
+.labelConversor {
+    margin-top: .5rem;
+    font-size: 2rem;
+}
+
+.inputConversor {
+    font-family: var(--octal-bin-family);
+    margin-top: .5rem;
+    height: 3rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.formButton, .converte {
+    margin-top: .5rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.rodape {
+    width: 100%;
+    background-color: black;
+}
+
+.rodapeTexto {
+    color: whitesmoke;
+    line-height: 5rem;
+    text-align: center;
+}
