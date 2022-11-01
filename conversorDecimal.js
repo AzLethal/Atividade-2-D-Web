@@ -9,12 +9,9 @@ let inputRes = document.querySelector('#result');
 const botaoConvert = document.querySelector('.converte');
 
 const clickBotaoBin = botaoBin.addEventListener('click', () => {
-    inputRes.value = '';
     return apresentaForm(formBin, formOct);
 });
 const clickBotaoOct = botaoOct.addEventListener('click', () => {
-    formBin.classList.remove('active');
-    inputRes.value = '';
     return apresentaForm(formOct, formBin);
 });
 
@@ -22,6 +19,7 @@ const clickResult = botaoConvert.addEventListener('click', mostraResult);
 
 //Apresenta o formulário de acordo com o botão selecionado (binario ou octal)
 function apresentaForm(add, rem) {
+    limpaForms(inputBin, inputOct, inputRes);
     add.classList.add('active')
     rem.classList.remove('active')
 }
@@ -57,6 +55,14 @@ function converteDecimal(event, decimal, conversor) {
     console.log(res);
     res.reverse();//inverte a ordem do array;
     return res.toString().replace(/,/g, ''); //retorna o resultado transformando em string e retira as virgulas
+}
+
+function limpaForms(bin, oct, res) {
+    if(formBin.classList.contains('active') || formOct.classList.contains('active')) {
+        bin.value = '';
+        oct.value = '';
+        res.value = '';
+    }
 }
 
 
