@@ -1,5 +1,5 @@
 
-Olá, meu nome é Marcelo Oliveira, sou estudande de TADS pela Uninove, elaborei este mk para exemplificar como foi a evolução do script JS deste projeto, dessa maneira, acredito que eu possa expressar como a lógica funcionou na minha cabeça.
+Olá, meu nome é Marcelo Oliveira, sou estudande de TADS pela Uninove, elaborei este md para exemplificar como foi a evolução do script JS deste projeto, dessa maneira, acredito que eu possa expressar como a lógica funcionou na minha cabeça.
 
 1# - Seleção de formulários!
 
