@@ -5,7 +5,7 @@ const formBin = document.querySelector('.binForm');
 const formOct = document.querySelector('.octalForm');
 const inputBin = document.querySelector('#binary');
 const inputOct = document.querySelector('#oct');
-let inputRes = document.querySelector('#result');
+const inputRes = document.querySelector('#result');
 const botaoConvert = document.querySelector('.converte');
 
 const clickBotaoBin = botaoBin.addEventListener('click', () => {

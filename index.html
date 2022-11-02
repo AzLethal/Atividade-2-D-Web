@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Silkscreen&display=swap" rel="stylesheet">
     <title>Conversor | BINOCT</title>
+    <script src="./conversorDecimal.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -20,8 +21,19 @@
         </div>
     </header>
     <main class="principal">
-        <section>
-            <div class="menuPrimario">
+        <section class="curiosidades"> <!-- Painel Curiosidade-->
+            <aside>
+                <h2> Curiosidades!</h2>
+                <figure class="figureAside">
+                    <img class="imgAside" src="./img/tunel-binary.jpg" alt="ilustração de um tunel formado por numeros binários, zeros e uns">
+                    <figcaption class="legendaImg">Tunel Binário</figcaption>
+                </figure>
+                <p class="paragAside">Segundo o site Tecmundo (2022), o alemão Gottfried Leibniz inventou os números binários da maneira como utilizamos hoje no século 18! No entanto foi descoberto por pesquisadores da Universidade de Bergen (Noruega) que o sistema binário já era utilizado 400 anos antes!</p>
+            </aside>
+        </section>
+        <section class="secaoPrincipal"> <!-- Seção Principal - Navegação e Formulários-->
+            <!-- Divisão de navegação-->
+            <div>
                 <nav class="menu">
                     <button class="botao bin">
                         Binário | BIN
@@ -31,32 +43,40 @@
                     </button>
                 </nav>
             </div>
-        </section>
-        <section class="conversores">
-            <form class="form">
-                <div class="binForm active">
-                    <label class="labelConversor" for="binary">Conversão para Binário!</label>
-                    <input class="inputConversor" type="number" id="binary" placeholder="Decimal para Binário!">
-                </div>
-                <div class="octalForm">
-                    <label class="labelConversor" for="oct">Conversão para Octal!</label>
-                    <input class="inputConversor" type="number" id="oct" placeholder="Decimal para Octal!">
-                </div>
-                <div class="formButton">
-                    <button class="botao converte">Converter!!</button>
-                </div>
-                <div class="resultForm">
-                    <label class="labelConversor" for="result">Resultado!</label>
-                    <input class="inputConversor" type="number" id="result" placeholder="Resultado" readonly>
-                </div>
-            </form>
+            <div class="conversores"> <!-- Seção de Formulários-->
+                <form class="form">
+                    <div class="binForm active">
+                        <label class="labelConversor" for="binary">Conversão para Binário!</label>
+                        <input class="inputConversor" type="number" id="binary" placeholder="Decimal para Binário!">
+                    </div>
+                    <div class="octalForm">
+                        <label class="labelConversor" for="oct">Conversão para Octal!</label>
+                        <input class="inputConversor" type="number" id="oct" placeholder="Decimal para Octal!">
+                    </div>
+                    <div class="formButton">
+                        <button class="botao converte">Converter!!</button>
+                    </div>
+                    <div class="resultForm">
+                        <label class="labelConversor" for="result">Resultado!</label>
+                        <input class="inputConversor" type="number" id="result" placeholder="Resultado" readonly>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="rodape">
         <div class="rodapeTexto">
-            &copy; Developed by Marcelo Olivera  
+            <p class="descricaoRodape">
+                Disciplina de Tecnologia em Análise e Desenvolvimento de Sistemas
+            </p>
+            <h3>
+                &copy; Developed by Marcelo Gomes de Abreu Olivera <br>
+                RA: 3022107357
+            </h3>
+            <address>
+                <a class="mail" href="mailto:marcelo.gomes.oliveira97@uni9.edu.br">marcelo.gomes.oliveira97@uni9.edu.br</a>
+            </address>
         </div>
     </footer>
 </body>
-<script src="./conversorDecimal.js"></script>
 </html>
