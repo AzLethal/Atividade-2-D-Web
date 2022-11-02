@@ -37,7 +37,6 @@ Utilizei o document.querySelector(), para vincular os INPUTs e os FORMs HTML com
  
  Ao criar os forms BIN e OCT no HTML, obtive ambos sendo apresentados pelo "display: 'flex'", contudo, o meu objetivo é que apenas fossem apresentados quando selecionados através dos BOTÕES BIN ou OCT, sendo assim elaborei a função "apresentaForm" e coloquei o "display: 'none'" no octalForm, dessa maneira o formulário Octal não será apresentado no ínicio do código.
     function apresentaForm(add, rem) {
-<!--limpaForms(inputBin, inputOct, inputRes);-->
     add.classList.add('active')
     rem.classList.remove('active')
 }
