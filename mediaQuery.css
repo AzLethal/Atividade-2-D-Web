@@ -1,11 +1,11 @@
 
 @media screen and (min-width: 320px) {
     .titulo{
-    font-size: 1.5rem;
+    font-size: 2rem;
     }
 
     .subtitulo {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     
     .oitoBits {
@@ -19,8 +19,8 @@
     }
 
     .titulo{
-    font-size: 2.5rem;
-    padding: 1.5rem;
+        font-size: 2.5rem;
+        padding: 1.5rem;
     }
 
     .subtitulo {
@@ -75,7 +75,7 @@
         font-size: 2rem;
         height: 3rem;
     }
-    
+
     .descricaoRodape {
         font-size: 1.5rem;
         color: limegreen;
