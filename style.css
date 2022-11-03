@@ -79,7 +79,15 @@ body {
     text-align:justify
 }
 
+.refer {
+    text-decoration: none;
+    color: limegreen;
+    font-size: .8rem;
+}
 
+.referSite{
+    font-size: 1rem;
+}
 
 .secaoPrincipal {
     background-color: #222;
