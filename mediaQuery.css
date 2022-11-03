@@ -1,15 +1,17 @@
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 321px) {
     .titulo{
-    font-size: 2rem;
+        font-size: 2.2rem;
+        padding: .5rem;
     }
 
     .subtitulo {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+        padding: .5rem;
     }
     
     .oitoBits {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 
