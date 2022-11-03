@@ -1,0 +1,175 @@
+
+@media screen and (min-width: 320px) {
+    .titulo{
+    font-size: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .oitoBits {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        height: 35vh;
+    }
+
+    .titulo{
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+    }
+    
+    .oitoBits {
+        font-size: 2rem;
+    }
+
+    .principal {
+        flex-direction: row;
+    }
+
+    .curiosidades {
+        width: 30%;
+        padding: 5px;
+    }
+
+    .secaoPrincipal {
+        width: 75%;
+    }
+
+    .menu{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .bin {
+        width: 43%;
+        margin: 0 10px 0 0;
+    }
+    
+    .octal {
+        width: 43%;
+    }
+
+    .conversores {
+        justify-content: flex-start;
+        width: 89%;
+    }
+
+    .labelConversor {
+        font-size: 2rem;
+    }
+
+    .inputConversor {
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    .formButton, .converte {
+        font-size: 2rem;
+        height: 3rem;
+    }
+    
+    .descricaoRodape {
+        font-size: 1.5rem;
+        color: limegreen;
+    }
+    
+    .mail {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        height: 40vh;
+    }
+    
+    .titulo{
+    font-size: 3.5rem;
+    padding: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+    }
+    
+    .oitoBits {
+        font-size: 3rem;
+    }
+
+    .curiosidades {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .bin {
+        width: 41%;
+        margin: 0 10px 0 0;
+    }
+    
+    .octal {
+        width: 41%;
+    }
+
+    .conversores {
+        justify-content: flex-start;
+        width: 85%;
+    }
+
+    .form {
+        padding: 1.3rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .cabecalho {
+        height: 40vh;
+    }
+    .titulo{
+        font-size: 3rem;
+        padding: 2rem 2rem .5rem 2rem;
+    }
+
+    .subtitulo {
+        font-size: 2.5rem;
+        padding: 2rem 2rem .5rem 2rem;
+    }
+    
+    .oitoBits {
+        font-size: 2.5rem;
+    }
+
+    .curiosidades {
+        width: 30%;
+    }    
+}
+
+
+@media screen and (min-width: 1440px) {
+    .titulo{
+        font-size: 5rem;
+    }
+
+    .curiosidades {
+        width: 30%;
+        padding: 15px;
+    }
+
+    .legendaImg {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .titulo{
+        font-size: 10rem;
+    }
+}
