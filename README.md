@@ -1,25 +1,29 @@
 <h1>Conversor Decimal -> Binário || Octal</h1>
 
-Olá, meu nome é Marcelo Oliveira, sou estudande de TADS pela Uninove, elaborei este README.md para exemplificar como foi a evolução do script JS deste projeto, dessa maneira, acredito que eu possa expressar como a lógica funcionou na minha cabeça.
-
-Objetivo:
-A ideia principal do projeto é o desenvolvimento de um conversor decimal para binário ou octal, sendo assim, decidi inicar criando 2 formulários em HTML que recebesse o INPUT dos valores pelo usuário, o BOTÃO de conversão e o INPUT de resultado.
+Olá, meu nome é Marcelo Oliveira, sou estudande de TADS pela Uninove, elaborei este **README.md** para exemplificar como foi a evolução do script **JS** deste projeto, dessa maneira, acredito que eu possa expressar como a lógica funcionou na minha cabeça.
+#
+**Objetivo:**
+A ideia principal do projeto é o desenvolvimento de um conversor decimal para binário ou octal, sendo assim, decidi inicar criando 2 formulários em HTML que recebessem o INPUT dos valores pelo usuário, o BOTÃO de conversão e o INPUT de resultado.
 Com os dois formulários criados, também inseri dois botões logo acima, que seriam responsáveis por indicar qual o tipo de conversão seria feita!
 Botões e Formulários criados, fiz a estilização através do CSS para melhor experiência do usuário!
 Finalizado o desenho, começa o desenvolvimento da lógica de conversão:
 
 # Para dar ínicio a lógica, me fiz algumas perguntas?!
 <h4> 1º passo: O que quero fazer? --> Criar um conversor</h4>
+
 <h4> 2º passo: O que preciso saber para fazer?</h4>
 
 - I   - O Conversor irá interagir com usuário, logo preciso de eventos que dependem de sua interação.
 - II  - Preciso entender como funciona a conversão de decimais para binários e octais
 - III - Devo entender quais ferramentas utilizar!
-<h4> 3º passo: Como irei fazer?</h4>
+#
+<h4>3º passo: Como irei fazer?</h4>
+
 -  I  - Vincular os itens HTML com JS para que "se conversem"
 -  II - Elaborar a lógica de conversão
 -  III- Inserir os valores convertidos e apresentar ao usuário através da "conversa" dos componentes.
 
+# Colocando em prática!
 
 Lógica
 1# - Vinculo HTML --> JS
