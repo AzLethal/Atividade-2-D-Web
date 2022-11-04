@@ -1,6 +1,6 @@
 <h1>Conversor Decimal -> Binário || Octal</h1>
 
-Olá, meu nome é Marcelo Oliveira, sou estudande de TADS pela Uninove, elaborei este **README.md** para exemplificar como foi a evolução do script **JS** deste projeto, dessa maneira, acredito que eu possa expressar como a lógica funcionou na minha cabeça.
+Olá, meu nome é **Marcelo Oliveira**, sou estudande de **TADS** pela **_Uninove_**, elaborei este **README.md** para exemplificar como foi a evolução do script **JS** deste projeto, dessa maneira, acredito que eu possa expressar como a lógica funcionou na minha cabeça.
 #
 **Objetivo:**
 A ideia principal do projeto é o desenvolvimento de um conversor decimal para binário ou octal, sendo assim, decidi inicar criando 2 formulários em HTML que recebessem o INPUT dos valores pelo usuário, o BOTÃO de conversão e o INPUT de resultado.
@@ -25,30 +25,32 @@ Finalizado o desenho, começa o desenvolvimento da lógica de conversão:
 
 # Colocando em prática!
 
-Lógica
-1# - Vinculo HTML --> JS
+<h1>Lógica</h1>
 
-Utilizei o document.querySelector(), para vincular os INPUTs e os FORMs HTML com constantes criadas no JS:
+**1# - Vinculo HTML --> JS**
+
+Utilizei o **document.querySelector()**, para vincular os **INPUTs** e os **FORMs HTML** com constantes criadas no **_JS_**:
+
     const botaoBin = document.querySelector('.bin');
     const botaoOct = document.querySelector('.octal');
-    // const form = document.querySelector('.form'); --> Iniciei este form, com a evolução do código não utilizei
     const formBin = document.querySelector('.binForm');
     const formOct = document.querySelector('.octalForm');
     const inputBin = document.querySelector('#binary');
     const inputOct = document.querySelector('#oct');
     const inputRes = document.querySelector('#result');
     const botaoConvert = document.querySelector('.converte');
-    
-2# - Apresentação do formulário
+   
+
+**2# - Apresentação do formulário.**
  
-Ao criar os forms BIN e OCT no HTML, apresentei ambos pelo "display: 'flex'", contudo, o meu objetivo é que apenas fossem apresentados quando selecionados através dos BOTÕES BIN ou OCT, sendo assim elaborei a função "apresentaForm" e coloquei o "display: 'none'" no octalForm, dessa maneira o formulário Octal não será apresentado no ínicio do código.
+Ao criar os forms **BIN** e **OCT** no **HTML**, apresentei ambos pelo **_"display: 'flex'"_**, contudo, o meu objetivo é que apenas fossem apresentados quando selecionados através dos **BOTÕES BIN** ou **OCT**, sendo assim elaborei a função **_"apresentaForm"_** e coloquei o **_"display: 'none'"_** no **octalForm**, dessa maneira o formulário Octal não será apresentado no ínicio do código.
 
-function apresentaForm(add, rem) {
-    add.classList.add('active')
-    rem.classList.remove('active')
-}
+    function apresentaForm(add, rem) {
+        add.classList.add('active')
+        rem.classList.remove('active')
+    }
 
-O Objetivo dessa função seria acrescentar e remover a classe 'active', no seletor que fosse escolhido. (No caso utilizei nos formBin e formOct)
+O Objetivo dessa função seria acrescentar e remover a classe **_'active'_**, no seletor que fosse escolhido. (No caso utilizei nos **formBin** e **formOct**)
 
 <!--
     function apresentaFormBin() {
