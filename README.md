@@ -95,8 +95,13 @@ Se o formulário de conversão binária estiver ativo (conter a class **_'active
 
 Após atribuir os valores ao **conversor** e ao **decimal**, precisei fazer um laço de repetição (um loop), seguindo a seguinte lógica: 
 
-Enquanto o **quociente** do **decimal** dividido pelo **conversor** for diferente de **0**, acrescente o **resto** do **decimal** dividido pelo **conversor** à variável **res**, que foi iniciada como uma **_string_** vazia. Ou seja, a cada loop do **while**, irei acrescentar o **resto** ao **res**, que por ser **_string_**, irá concatenar. Após o primeiro acréscimo, finalizei a estrutura do loop com o **decimal** recebendo o valor do **quociente** do **decimal** dividido pelo **conversor**, em outras palavras, nesse ponto, o decimal irá
+Enquanto o **quociente** do **decimal** dividido pelo **conversor** for diferente de **0**, acrescente o **resto** do **decimal** dividido pelo **conversor** à variável **res**, que foi iniciada como uma **_string_** vazia. Ou seja, a cada loop do **while**, irei acrescentar o **resto** ao **res**, que por ser **_string_**, irá concatenar. Após o primeiro acréscimo, finalizei a estrutura do loop com o **decimal** recebendo o valor do **quociente** do **decimal** dividido pelo **conversor**, em outras palavras, nesse ponto, o decimal irá receber o valor do **quociente** da primeira iteração, logo no final deste loop haverá a verificação se o **decimal** está ou não valendo **0**, se este for o caso, o loop se encerra, caso contrário o loop continua até que chegue a **0**.
+
 **Obs 2:** Coloquei a variável **quo**, apenas para verificar se a lógica estava correta!
+
+Loop encerrado, o valor de **res**, deverá ser o aglomerado de restos das divisões efetuadas dentro do loop. Oba!! Chegamos ao fim?? Não!! Conforme ensinado pelo professor **Aguinaldo** na disciplina de **Arquitetura de Computadores**, o valor do binário ou octal referente aos **restos** é lido de trás pra frente e como a concatenação efetuada pelo **+=** dentro loop apenas insere o numero a frente do anterior, obtivemos o número invertido!!
+
+Para resolver o problema acima, foi necessário dois passos simples, transforma o valor de **res** em um **ARRAY** utilizando a método de espalhamento **_split_** e logo em seguida inverter utilizando o método **_reverse_**, por fim, transformar em **_string_** novamente e retirar as virgulas, com o **_toString_** e ***_replace_**, utilizando regex no escopo global (//g).
 
     function converteDecimal(event, decimal, conversor) {
         event.preventDefault();
@@ -125,5 +130,51 @@ Enquanto o **quociente** do **decimal** dividido pelo **conversor** for diferent
         res.reverse();//inverte a ordem do array;
         return res.toString().replace(/,/g, ''); //retorna o resultado transformando em string e retira as virgulas
     }
+    
+Função pronta!!
 
+**Agora é o momento de aplicar!**
+
+Para efetuar a aplicação da função acima, tive em mente que ela poderia apenas ser executada após o **CLICK** no **BOTÃO** de converter, logo, criei a constante **_clickResult_** e atrelei ao evento de **CLICK**.
+
+    const clickResult = botaoConvert.addEventListener('click', mostraResult);
+  
+Porém, para que o resultado fosse impresso no campo do **INPUT DO RESULTADO**, precisei criar mais uma função que seria responsável por efetuar esse comando!
+
+Essa função irá retornar o valor a ser exibido no **INPUT** do **RESULTADO** (**inputRes**), o objetivo dessa função é executar a função anterior e guardar o valor dentro do **inputRes**, sendo assim, com a interação do usuário com o **BOTÃO** converter, será alterado o valor do **inputRes**, apresentando  e findando nossa lógica!!
+
+    function mostraResult(resultado) {
+        inputRes.value = converteDecimal(resultado);
+        return inputRes;
+    }
+    
+  **4# - Limpando o formulário!**
+  
+  Eu poderia ter parado no passo 3 dessa aplicação, mas resolvi que ficaria mais interessante ao usuário, se quando ele trocasse de formulário (clicando no oct caso estivesse no bin, ou, vice-versa), este fosse limpo!!
+  
+  Elaborei então uma função chamada **_limpaForms_**, que tem como parâmetros, **bin, oct** e **res**, a funcionalidade dela é simples, transforma os valores dos **INPUTS** **BINÁRIO, OCTAL** e **RESULTADO** em uma **_string_** em branco, quando clicado em um dos **BOTÕES** principais (**BIN** ou **OCT**).
+    
+Para isso, utilizei um **_if_**, com as condições, se ou formulário **BINÁRIO** ou o formulário **OCTAL** estiver com a class **_active_**, atribua os valores de **_string_** em branco ao **bin**, **oct** e **res**. Em seguinda, chamei essa função dentro da função **_apresentaForm_**, apresentada anteriormente, logo, sempre que for clicado em um dos **BOTÕES** **BIN** ou **OCT**, a função será chamada e limpará o formulário!!
+    
+    function apresentaForm(add, rem) {
+        limpaForms(inputBin, inputOct, inputRes); 
+        add.classList.add('active')
+        rem.classList.remove('active')
+    }
+    
+    function limpaForms(bin, oct, res) {
+        if(formBin.classList.contains('active') || formOct.classList.contains('active')) {
+            bin.value = '';
+            oct.value = '';
+            res.value = '';
+        }
+    }
+
+# Agradecimento!
+
+Gostaria de agradecer aos professores **HEBERT BRATEFIXE** e **AGUINALDO ALBERTO** das disciplinas de **PROGRAMAÇÃO FRONT-END**, **DESENVOLVIMENTO WEB** e **ARQUITETURA DE COMPUTADORES**, após suas aulas foi possível a realização deste projeto, com base nos estudos, desafios propostos e muita pesquisa!
+
+Também à equipe da **ALURA**, que provê cursos magnificos que me abriram a mente!
+
+# Eu sou MARCELO OLIVEIRA e este é um dos meus primeiros projetos em JS (totalmente solo).
 
