@@ -9,13 +9,13 @@ Botões e Formulários criados, fiz a estilização através do CSS para melhor 
 Finalizado o desenho, começa o desenvolvimento da lógica de conversão:
 
 # Para dar ínicio a lógica, me fiz algumas perguntas?!
-- 1º passo: O que quero fazer? --> Criar um conversor
-- 2º passo: O que preciso saber para fazer?
+<h4> 1º passo: O que quero fazer? --> Criar um conversor</h4>
+<h4> 2º passo: O que preciso saber para fazer?</h4>
 
 - I   - O Conversor irá interagir com usuário, logo preciso de eventos que dependem de sua interação.
 - II  - Preciso entender como funciona a conversão de decimais para binários e octais
 - III - Devo entender quais ferramentas utilizar!
-3º passo: Como irei fazer?
+<h4> 3º passo: Como irei fazer?</h4>
 -  I  - Vincular os itens HTML com JS para que "se conversem"
 -  II - Elaborar a lógica de conversão
 -  III- Inserir os valores convertidos e apresentar ao usuário através da "conversa" dos componentes.
