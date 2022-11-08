@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fontPag-padrao);
+}
+
+:root {
     --octal-bin-family: 'Silkscreen', cursive;
     --fontPag-padrao: 'Orbitron', sans-serif;
     --botao: hsla(0, 0%, 90%, 0.8);
     --corFundo: -webkit-linear-gradient(right, hsla(0, 88%, 88%, 0) , hsla(0, 88%, 88%, 0.2), hsla(0, 100%, 100%, 0.4));
-    font-family: var(--fontPag-padrao);
 }
 
 body {
@@ -70,13 +73,13 @@ body {
 }
 
 .legendaImg:hover {
-    background-color: hsla(0, 88%, 88%, 0);;
+    background-color: hsla(0, 88%, 88%, 0);
 }
 
 .paragAside {
     padding: 1rem 1.2rem 1rem .5rem;
     line-height: 1.7rem;
-    text-align:justify
+    text-align:justify;
 }
 
 .refer {
@@ -87,6 +90,7 @@ body {
 
 .referSite{
     font-size: 1rem;
+    display: flex;
 }
 
 .secaoPrincipal {
